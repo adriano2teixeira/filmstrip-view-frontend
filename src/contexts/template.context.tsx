@@ -63,7 +63,7 @@ export const TemplateContextProvider: React.FC = ({ children }) => {
       for (let index = 0; index < Groups.length; index++) {
         let n_group: Array<any> = Groups[index];
         for(let i = 0; i < n_group.length; i++) {
-          if(n_group[i] === data[nActiveTemplate]) {
+          if(n_group[i] == data[nActiveTemplate]) {
             setActiveGroup(index)
           }
         }
